@@ -20,11 +20,27 @@
 {% endif %}
 {% include navigation.html %}
 
+<div id="main" role="main" itemprop="mainContentOfPage">
   <article class="entry" itemscope>
     {% if page.image.feature %}<img src="{{ site.url }}/images/{{ page.image.feature }}" class="entry-feature-image" alt="{{ page.title }}" itemprop="image">{% if page.image.credit %}<p class="image-credit">Photo Credit: <a href="{{ page.image.creditlink }}">{{ page.image.credit }}</a>{% endif %}{% endif %}
     <div class="entry-wrapper">
       <header class="entry-header">
-        <h1 class="entry-title" itemprop="name">{% if page.headline %}{{ page.headline }}{% else %}{{ page.title }}</h1>{% endif %}
+        <!-- <h1 class="entry-title" itemprop="name">{% if page.headline %}{{ page.headline }}{% else %}{{ page.title }}</h1>{% endif %} -->
+        <p>The OpenDataHK is an open, participative, volunteer-run group of Hong Kong citizens who support Open Data, founded in March 2013. Anyone is welcome to join, take part and lead.</p>
+        <p>We are engaged citizens. Members are people who value government transparency. Some of us are analysts who study data, others are researchers of public trends, programmers who work with data visualisation, people developing data-driven apps, public servants who want to open governemnt data to the public, to name just a few.</p>
+        <h3>What we do:</h3>
+        <ul>
+          <li>Raise awareness and share knowledge about Open Data and its benefits;</li>
+          <li>Facilitate collaborations among Open Data suporters;</li>
+          <li>Advocate for increased availability and quality of Open Data.</li>
+        </ul>
+        <h3>We do this by:</h3>
+        <ul>
+          <li>Collecting and providing resources about Hong Kong Open Data;</li>
+          <li>Organising events for the community to connect, collaborate, share, and understand;</li>
+          <li>Liaising with the Hong Kong government and other sectors to facilitate the release and improved quality of Open Data.</li>
+        </ul> 
+        <h3>Upcoming events:</h3>
       </header>
       <div class="entry-content" itemprop="description">
         {{ content }}

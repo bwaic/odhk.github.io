@@ -8,7 +8,16 @@
 </head>
 
 <body id="post" itemscope itemtype="http://schema.org/WebPage">
-
+{% if site.okfn_ribbon %}
+<div class="fixed-okf-panel">
+  <div id="okf-panel" class="collapse">
+    <iframe src="http://assets.okfn.org/themes/okfn/okf-panel.html" scrolling="no"></iframe>
+  </div>
+  <div class="okfn-ribbon">
+    <a href="http://okfn.org/" data-toggle="collapse" data-target="#okf-panel" title="Part of the Open Knowledge Foundation Network">An Open Knowledge Foundation Local Initiative</a>
+  </div>
+</div>
+{% endif %}
 {% include navigation.html %}
 
 <div id="main" role="main" itemprop="mainContentOfPage" itemscope itemtype="http://schema.org/Blog">

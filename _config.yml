@@ -1,21 +1,21 @@
 title:            Open Data Hong Kong
-description:      Open Data Hong Kong
-logo:             https://1.gravatar.com/avatar/4f540aa28cecd1443c0935b725933b75?d=https%3A%2F%2Fidenticons.github.com%2F00a4621bad9a35b96864e5db84cf7cc6.png
+description:      'Discoverable, Unconditional, Structured'
+logo:             odhk.png
 disqus_shortname: 
 search:           true
 #Change url to your domain. Leave localhost server or blank when working locally.
-# url:              http://localhost:4000
-url:              http://odhk.github.io
+url:              http://localhost:4000
+# url:              http://odhk.github.io
 
 # Owner/author information
 owner:
   name:           Open Data Hong Kong
-  avatar:         https://1.gravatar.com/avatar/4f540aa28cecd1443c0935b725933b75?d=https%3A%2F%2Fidenticons.github.com%2F00a4621bad9a35b96864e5db84cf7cc6.png
+  avatar:         odhk.png
   email:          info@opendatahk.com
   # Social networking links used in footer. Update and remove as you like.
-  twitter:        https://twitter.com/opendata_hk
-  facebook:       https://www.facebook.com/groups/opendatahongkong/
-  github:         https://github.com/ODHK
+  twitter:        opendata_hk
+  facebook:       groups/opendatahongkong
+  github:         ODHK
   stackexchange:  
   linkedin:       
   instagram:      
@@ -30,17 +30,23 @@ google_verify:
 # https://ssl.bing.com/webmaster/configure/verify/ownership Option 2 content= goes here
 bing_verify:         
 
+# ODHK specific settings
+okfn_ribbon:    true
+
 # Links to include in top navigation
 # For external links add external: true
 links:
-  - title: About
-    url: /about
-  - title: Articles
-    url: /articles
-  - title: Theme Setup
-    url: /theme-setup
-  - title: Made Mistakes
-    url: http://mademistakes.com
+  # - title: About
+    # url: /about
+  - title: Meetups
+    url: /meetups
+  # - title: Theme Setup
+    # url: /theme-setup
+  - title: Google+
+    url: https://plus.google.com/communities/107947866980791843501
+    external: true
+  - title: Facebook
+    url: https://www.facebook.com/groups/opendatahongkong/
     external: true
 
 # http://en.wikipedia.org/wiki/List_of_tz_database_time_zones
