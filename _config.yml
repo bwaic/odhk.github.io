@@ -1,30 +1,31 @@
-title:            Site Title
-description:      Describe your website here.
-logo:             site-logo.png
+title:            Open Data Hong Kong
+description:      Open Data Hong Kong
+logo:             https://1.gravatar.com/avatar/4f540aa28cecd1443c0935b725933b75?d=https%3A%2F%2Fidenticons.github.com%2F00a4621bad9a35b96864e5db84cf7cc6.png
 disqus_shortname: 
 search:           true
 #Change url to your domain. Leave localhost server or blank when working locally.
-url:              http://localhost:4000
+# url:              http://localhost:4000
+url:              http://odhk.github.io
 
 # Owner/author information
 owner:
-  name:           Your Name
-  avatar:         bio-photo.jpg
-  email:          you@email.com
+  name:           Open Data Hong Kong
+  avatar:         https://1.gravatar.com/avatar/4f540aa28cecd1443c0935b725933b75?d=https%3A%2F%2Fidenticons.github.com%2F00a4621bad9a35b96864e5db84cf7cc6.png
+  email:          info@opendatahk.com
   # Social networking links used in footer. Update and remove as you like.
-  twitter:        
-  facebook:       
-  github:         
+  twitter:        https://twitter.com/opendata_hk
+  facebook:       https://www.facebook.com/groups/opendatahongkong/
+  github:         https://github.com/ODHK
   stackexchange:  
   linkedin:       
   instagram:      
   flickr:         
   tumblr:         
   # For Google Authorship https://plus.google.com/authorship
-  google_plus:    
+  google_plus:    https://plus.google.com/communities/107947866980791843501
 
 # Analytics and webmaster tools stuff goes here
-google_analytics:   
+google_analytics:  UA-40620175-1
 google_verify:      
 # https://ssl.bing.com/webmaster/configure/verify/ownership Option 2 content= goes here
 bing_verify:         
@@ -43,7 +44,7 @@ links:
     external: true
 
 # http://en.wikipedia.org/wiki/List_of_tz_database_time_zones
-timezone:    America/New_York
+timezone:    Asia/Hong_Kong
 future:      true
 pygments:    true
 markdown:    kramdown
