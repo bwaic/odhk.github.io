@@ -25,9 +25,11 @@
     {% if page.image.feature %}<img src="{{ site.url }}/images/{{ page.image.feature }}" class="entry-feature-image" alt="{{ page.title }}" itemprop="image">{% if page.image.credit %}<p class="image-credit">Photo Credit: <a href="{{ page.image.creditlink }}">{{ page.image.credit }}</a>{% endif %}{% endif %}
     <div class="entry-wrapper">
       <header class="entry-header">
-        <!-- <h1 class="entry-title" itemprop="name">{% if page.headline %}{{ page.headline }}{% else %}{{ page.title }}</h1>{% endif %} -->
+        <!-- <h1 class="entry-title" itemprop="name">{% if page.headline %}{{ page.headline }}{% else %}{{ page.title }}</h1>{% endif %} --></header>
+
         <p>The OpenDataHK is an open, participative, volunteer-run group of Hong Kong citizens who support Open Data, founded in March 2013. Anyone is welcome to join, take part and lead.</p>
         <p>We are engaged citizens. Members are people who value government transparency. Some of us are analysts who study data, others are researchers of public trends, programmers who work with data visualisation, people developing data-driven apps, public servants who want to open governemnt data to the public, to name just a few.</p>
+        
         <h3>What we do:</h3>
         <ul>
           <li>Raise awareness and share knowledge about Open Data and its benefits;</li>
@@ -41,7 +43,6 @@
           <li>Liaising with the Hong Kong government and other sectors to facilitate the release and improved quality of Open Data.</li>
         </ul> 
         <h3>Upcoming events:</h3>
-      </header>
       <div class="entry-content" itemprop="description">
         {{ content }}
       </div><!-- /.entry-content -->
@@ -59,6 +60,7 @@
             <div id="mc_embed_signup" class="entry-content">
               <form action="http://opendatahk.us5.list-manage.com/subscribe/post?u=a0e9926f917f4013e5558f672&amp;id=84ad0042be" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
               <div class="mc-field-group">
+                <label for="mce-EMAIL">Email Address</label>
                 <input type="email" value="" name="EMAIL" placeholder="Email Address" class="required email" id="mce-EMAIL">
               </div>
               <div id="mce-responses" class="clear">
