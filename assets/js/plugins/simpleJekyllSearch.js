@@ -8,7 +8,7 @@
 (function($) {
     $.fn.simpleJekyllSearch = function(options) {
         var settings = $.extend({
-            jsonFile        : 'http://www.corsproxy.com/opendatahk.com/search.json',
+            jsonFile        : 'search.json',
             jsonFormat      : 'title,category,desc,url,date,shortdate',
             template        : '<a href="{url}" title="{title}">{title}</a>',
             searchResults   : '.results',
