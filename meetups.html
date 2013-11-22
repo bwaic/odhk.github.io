@@ -7,12 +7,16 @@ description: "Open Data Meetups ~ Tri-weekly"
 <p>We meet in a casual setting every three weeks on a Thursday evening to talk Open Data. Our meetings start with a basic introdction to open data, followed by discussion of our goals and progress, knowledge sharing, welcoming new people to the group. Occasionally, we invite guest speakers. If you'd like to know more, join one of our online communities, shoot us an email, and/or come along to Delaney's Wanchai on a Thursday night. See the events page for the exact dates of our Thursday meetings, as well as other events. Take at look at our Projects page to see some of the ways Open Data can be applied for the benefit of Hong Kong people.</p>
 <h3>Upcoming</h3>
 <ul class="post-list">
-{% for post in site.tags.upcomingmeet limit: 20 %}
-  <li><article><a href="{{ site.url }}{{ post.url }}">{{ post.title }} <span class="entry-date"><time datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date: "%B %d, %Y" }}</time></span></a></article></li>
+{% for post in site.tags.meet limit: 20 %}
+	{% if site.time < post.date %}
+  <li><article><a href="{{ site.url }}{{ post.url }}">{{ post.title }} : {{ post.description }}<span class="entry-date"><time datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date: "%B %d, %Y" }}</time></span></a></article></li>
+	{% endif %}
 {% endfor %}
 <h3>Previous</h3>
 <ul class="post-list">
-{% for post in site.tags.meet limit: 20 %}
-  <li><article><a href="{{ site.url }}{{ post.url }}">{{ post.title }} <span class="entry-date"><time datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date: "%B %d, %Y" }}</time></span></a></article></li>
+{% for post in site.tags.meet %}
+	{% if site.time > post.date %}
+  <li><article><a href="{{ site.url }}{{ post.url }}">{{ post.title }} : {{ post.description }}<span class="entry-date"><time datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date: "%B %d, %Y" }}</time></span></a></article></li>
+	{% endif %}
 {% endfor %}
 </ul>

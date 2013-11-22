@@ -6,7 +6,9 @@ tags: [Open Data, Hong Kong, Landing Page, Index, Home]
 ---
 
 <ul class="post-list">
-  {% for post in site.tags.upcoming reversed %}
-  <li><article><a href="{{ site.url }}{{ post.url }}">{{ post.title }} <span class="entry-date"><time datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date: "%B %d, %Y" }}</time></span></a></article></li>
+  {% for post in site.posts reversed %}
+  	{% if site.time < post.date %}
+  <li><article><a href="{{ site.url }}{{ post.url }}">{{ post.title }} : {{ post.description }} <span class="entry-date"><time datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date: "%B %d, %Y" }}</time></span></a></article></li>
+	{% endif %}
 {% endfor %}
 </ul>
