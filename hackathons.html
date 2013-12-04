@@ -1,0 +1,24 @@
+---
+layout: page
+permalink: /hackathons/index.html
+title: Makes
+description: "Open Data Makes ~ Civic Hackathons"
+---
+<p>The first Make hackathon highlighted what becomes possible when developers, journalists, policy people and designers team up over a weekend to work on Open Data apps. In the upcoming year we intend to grow the Make hackathons, partner with government and academic institutions and extend the scope beyond apps to build civic and cultural capital.</p>
+<p>The upcoming Makes are still under development, but you can register your interest by shooting us an email at <a href="mailto:make@opendatahk.com?subject=Register%20Interest">make@opendatahk.com </a>.
+</p>
+<h3>Upcoming</h3>
+<ul class="post-list">
+{% for post in site.tags.make limit: 20 %}
+	{% if site.time < post.date %}
+  <li><article><a href="{{ site.url }}{{ post.url }}">{{ post.title }} : {{ post.description }}<span class="entry-date"><time datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date: "%B %d, %Y" }}</time></span></a></article></li>
+	{% endif %}
+{% endfor %}
+<h3>Previous</h3>
+<ul class="post-list">
+{% for post in site.tags.make %}
+	{% if site.time > post.date %}
+  <li><article><a href="{{ site.url }}{{ post.url }}">{{ post.title }} : {{ post.description }}<span class="entry-date"><time datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date: "%B %d, %Y" }}</time></span></a></article></li>
+	{% endif %}
+{% endfor %}
+</ul>
